@@ -52,27 +52,43 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">PropensityBench: Evaluating Latent Safety Risks in Foundation Models via an Agentic Approach</h1>
+            <h1 class="title is-1 publication-title">PropensityBench: Evaluating Latent Safety Risks in Large Language Models via an Agentic Approach</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                <a href="https://udarimadhu.github.io/" target="_blank">Udari Madhushani Sehwag</a><sup>1,2,*</sup>,
+                  </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://shayanshabihi.com" target="_blank">Shayan Shabihi</a><sup>3,*</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://datascience.unc.edu/person/alex-mcavoy/" target="_blank">Alex McAvoy</a><sup>4</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="vsehwag.github.io" target="_blank">Vikash Sehwag</a><sup>5</sup>,
+                  </span><br>
+                  <span class="author-block">
+                    <a href="https://yuancheng-xu.github.io" target="_blank">Yuancheng Xu</a><sup>3</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=HbMQETcAAAAJ&hl=en" target="_blank">Dalton Towers</a><sup>6</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href=">https://furong-huang.com" target="_blank">Furong Huang</a><sup>3</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block"><sup>1</sup>Scale AI, <sup>2</sup>Stanford U, <sup>3</sup>U of Maryland, <sup>4</sup>U of North Carolina at Chapel Hill, <br>
+                      <sup>5</sup>Google Deepmind, <sup>6</sup>U of Texas at Austin
+                      <!-- <br>Conferance name and year</span> -->
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
-                      <span class="link-block">
+                      <!-- <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -80,10 +96,10 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,11 +107,11 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/shabihish/propensity-evaluation" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -106,12 +122,12 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://huggingface.co/datasets/shabihish/PropensityBench/tree/main" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Dataset</span>
                 </a>
               </span>
             </div>
@@ -147,7 +163,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent advances in Large Language Models (LLMs) have sparked concerns over their potential to acquire and misuse dangerous capabilities, posing frontier risks to society. Current safety evaluations primarily test for what a model can do, without assessing what it would do if endowed with high-risk capabilities. This leaves a critical blind spot: models may strategically withhold capabilities or rapidly acquire them, while harboring latent inclinations toward misuse. We argue that propensity - the likelihood of a model to pursue harmful actions if empowered - is a critical, yet underexplored, axis of safety evaluation. We present PropensityBench, a novel benchmark framework that assesses the proclivity of models to engage in risky behaviors when equipped with simulated dangerous capabilities using proxy tools. Our framework spans four high-risk domains: self-proliferation, cybersecurity, chemical security, and biosecurity. We simulate access to powerful capabilities via a controlled agentic environment and evaluate the models' choices under varying operational pressures that reflect real-world constraints or incentives models may encounter, such as resource scarcity or gaining more autonomy.
+            <!-- Recent advances in Large Language Models (LLMs) have sparked concerns over their potential to acquire and misuse dangerous capabilities, posing frontier risks to society. Current safety evaluations primarily test for what a model can do, without assessing what it would do if endowed with high-risk capabilities. This leaves a critical blind spot: models may strategically withhold capabilities or rapidly acquire them, while harboring latent inclinations toward misuse. We argue that propensity - the likelihood of a model to pursue harmful actions if empowered - is a critical, yet underexplored, axis of safety evaluation. We present PropensityBench, a novel benchmark framework that assesses the proclivity of models to engage in risky behaviors when equipped with simulated dangerous capabilities using proxy tools. Our framework spans four high-risk domains: self-proliferation, cybersecurity, chemical security, and biosecurity. We simulate access to powerful capabilities via a controlled agentic environment and evaluate the models' choices under varying operational pressures that reflect real-world constraints or incentives models may encounter, such as resource scarcity or gaining more autonomy. -->
+            Recent advances in Large Language Models (LLMs) have sparked concerns over their potential to acquire and misuse dangerous capabilities, posing frontier risks to society. Current safety evaluations primarily test for what a model <em>can</em> do---its capabilities---without assessing what it <em>would</em> do if endowed with high-risk capabilities. This leaves a critical blind spot: models may strategically conceal capabilities or rapidly acquire them, while harboring latent inclinations toward misuse.  We argue that <strong>propensity</strong>---the likelihood of a model to pursue harmful actions if empowered---is a critical, yet underexplored, axis of safety evaluation. We present <strong>PropensityBench</strong>, a novel benchmark framework that assesses the proclivity of models to engage in risky behaviors when equipped with simulated dangerous capabilities using proxy tools. Our framework spans four high-risk domains: self-proliferation, cybersecurity, chemical security, and biosecurity. We simulate access to powerful capabilities via a controlled agentic environment and evaluate the models' choices under varying operational pressures that reflect real-world constraints or incentives models may encounter, such as resource scarcity or gaining more autonomy. Across open-source and proprietary frontier models, we uncover alarming signs of propensity: models frequently choose high-risk tools when under pressure, despite lacking the capability to execute such actions unaided. These findings call for a shift from static capability audits toward dynamic propensity assessments as a prerequisite for deploying frontier AI systems safely.
           </p>
         </div>
       </div>
@@ -161,10 +178,10 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Figure-1</h2>
+          <h2 class="title is-3">Two stage automated pipeline for scalable scenario generation</h2>
           <div class="content has-text-justified">
             <img src="static/images/scenario_generation_pipeline_propensitybench.png" width="100%"/>        
-            <p>Scenario generation pipeline for the benchmark.</p>
+            <p>We start with the seed configuration that provides the domain, environment, agent's role, and the risk category information to the scenario generation pipeline. In Stage 1, seed configuration is fed to a reasoning LLM to synthesize high-level scenario outlines with both aligned and misaligned approaches. In Stage 2, these outlines are operationalized into concrete tool definitions, refined task and consequence descriptions, and JSON-structured prompts, yielding fully specified scenarios ready for evaluation and easy extension to novel risk domains at scale.</p>
           </div>
         </div>
       </div>
@@ -175,14 +192,28 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Figure-2</h2>
+          <h2 class="title is-3">End-to-end scenario simulation pipeline</h2>
           <div class="content has-text-justified">
             <img src="static/images/pressure_category_and_overall_pipeline.png" width="100%"/>  
-            <p>Pressure categories and the overall pipeline for the simulation.</p>   
+            <p>End-to-end scenario simulation pipeline showing how static pressure messages at ten escalating intensity levels are interleaved with agent reasoning and tool-call interactions, terminating either upon simulation end or upon activation of the misaligned trigger.</p>   
           </div>
         </div>
       </div>
     </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Taxonomy of dangerous capabilities and pressure tactics</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/misc_artifacts.png" width="100%"/>        
+          <p>(a) Taxonomy of dangerous capabilities in the four risk domains used in our work (b) The six pressure tactics and the highest and lower pressure in each.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 
@@ -190,7 +221,13 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{sehwag25PropensityBench,
+        title={PropensityBench: Evaluating Latent Safety Risks in Large Language Models via an Agentic Approach},
+        author={Sehwag, Udari Madhushani and Shabihi, Shayan and McAvoy, Alex and Sehwag, Vikash and
+          Xu, Yuancheng and Towers, Dalton and Huang, Furong}
+        journal={under submission},
+        year={2025}
+      }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
